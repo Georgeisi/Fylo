@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+
+
 :root{
     --dark-blue1: hsl(217, 28%, 15%);
     --dark-blue2: hsl(218, 28%, 13%);
@@ -12,16 +17,23 @@
     padding: 0px;
     margin: 0px;
 }
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
 
 
 body{
     background-color: var(--dark-blue1);
+    font-family: 'Open Sans', sans-serif;
     
 }
 
 a{
     text-decoration:none ;
     color: gray;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
 }
 a:hover{
     color: white;
@@ -75,17 +87,27 @@ a:hover{
 .section1 button:hover{
     background-color: var(--cyan);
 }
-.section2{
+.sec2{
     background-color: var(--dark-blue2);
-    padding: 60px 0px;
+    padding: 60px 0;
 }
-.innersection2{
-    color: var(--white);
-    /* display: grid; */
-    /* grid-template-columns: 1fr; */
+.sec2-content{
+   display: grid;
+   grid-template-columns: 1fr;
     gap: 30px;
-    max-width: 700px;
-    margin:0 auto;
+   max-width: 600px;
+   margin: 0 60px;
+   text-align: center;
+   padding: 10px 20px;
+   color: var(--white);
+   
+}
+@media  all and (min-width: 768px) {
+    .sec2-content{
+        grid-template-columns: 1fr 1fr;
+        padding-left: 200px;
+    }
+    
 }
 
    
